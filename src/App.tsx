@@ -37,27 +37,49 @@ function App() {
             paddingLeft: 12,
             paddingRight: 12,
             margin: 16,
-            borderRadius: 50
+            borderRadius: 50,
           }}
         >
           {index == 0 ? (
-            <img
-              style={{ width: 25, height: 25 }}
-              src={coroa}
-              className="logo react"
-              alt="React logo"
-            />
+            <div
+              style={{
+                position: "relative",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
+              <img
+                style={{
+                  width: 30,
+                  height: 30,
+                  paddingLeft: 12,
+                  paddingRight: 12,
+                }}
+                src={coroa}
+                className="logo react"
+                alt="React logo"
+              />
+            </div>
           ) : (
-            <p style={{ width: 25, height: 25 }}></p>
+            <p
+              style={{
+                fontSize: 22,
+                width: 25,
+                height: 25,
+                paddingLeft: 30,
+                paddingRight: 12,
+              }}
+            ></p>
           )}
-          <p style={{ width: 250, textAlign: "left" }}>
+          <p style={{ width: 250 }}>
             <span style={{ color: "white", fontSize: 28 }}>{d.name}</span>
           </p>
           <p>
             <span
               style={{
                 color: "red",
-                fontSize: 20,
+                fontSize: 28,
                 padding: 4,
                 fontWeight: 700,
               }}
