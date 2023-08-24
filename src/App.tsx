@@ -17,7 +17,7 @@ function App() {
   
   const [data, setData] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:3333/api/v1/rank")
+    fetch("https://api-render-fsef.onrender.com/api/v1/rank")
       .then((response) => response.json())
       .then((res) => setData(res));
   }, []);
